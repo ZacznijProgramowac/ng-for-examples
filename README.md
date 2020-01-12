@@ -3,7 +3,7 @@
 - kurs udemy [https://www.udemy.com/course/angular-kompletny-kurs-od-podstaw/](https://www.udemy.com/course/angular-kompletny-kurs-od-podstaw/)
 - blog [https://zacznijprogramowac.net/](https://zacznijprogramowac.net/)
 # Otwórz przez StackBlitz:
-[https://stackblitz.com/github/ZacznijProgramowac/ng-for-exercises](https://stackblitz.com/github/ZacznijProgramowac/ng-for-exercises)
+[https://stackblitz.com/github/ZacznijProgramowac/ng-for-examples](https://stackblitz.com/github/ZacznijProgramowac/ng-for-examples)
 
 ## Wymagania projektu
 - Angular CLI: 9.0.0-rc.7
