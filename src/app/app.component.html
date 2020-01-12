@@ -1,0 +1,42 @@
+<h1>Przykłady użycia ngFor</h1>
+<h2>Wyświetlenie wszystkich elementów:</h2>
+<ul>
+  <li *ngFor="let item of list">{{ item }}</li>
+</ul>
+
+<h2>Wyświetlenie z indeksem:</h2>
+<ul>
+  <li *ngFor="let item of list; let i = index">{{ i }}. {{ item }}</li>
+</ul>
+
+<h2>Wyświetla pierwszy i ostatni index:</h2>
+<ul>
+  <ng-container *ngFor="let item of list; let first = first; let last = last">
+    <li *ngIf="first">
+      {{ item }}
+    </li>
+    <li *ngIf="last">
+      {{ item }}
+    </li>
+  </ng-container>
+</ul>
+
+<h2>Wyświetlenie parzysty i nieparzysty index:</h2>
+<ul>
+  <ng-container *ngFor="let item of list; let even = even; let odd = odd">
+    <li style="color: green" *ngIf="even">
+      {{ item }}
+    </li>
+    <li style="color: orangered" *ngIf="odd">
+      {{ item }}
+    </li>
+  </ng-container>
+</ul>
+
+<h2>Wyświetlenie kluczy i wartości obiektów, (sortowanie po kluczu):</h2>
+{{ weeks | json }}
+<ul>
+  <li *ngFor="let item of weeks | keyvalue">
+    {{ item.key }} - {{ item.value }}
+  </li>
+</ul>
